@@ -35,7 +35,6 @@ header .hero {
   /* height: 80vh; */
   padding: 10vh 0;
   /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
-  /* background-image: url(bg.webp); */
   background: indigo url(https://i0.wp.com/asset.fgp.one/file/header-bg.jpg) center/cover no-repeat border-box border-box fixed;
   /* color: indigo; */
   display: flex;

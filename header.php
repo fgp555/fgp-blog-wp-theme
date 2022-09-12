@@ -42,7 +42,7 @@
 <body>
     <header>
         <section class="topbar">
-            <a href="https://github.com/fgp555/fgp-wp-blog-theme" style="text-decoration: none;" target="_blank">
+            <a href="https://github.com/fgp555/fgp-blog-wp-theme" style="text-decoration: none;" target="_blank">
                 <p>FGP Blog WP Theme — version 2022.9.12</p>
             </a>
         </section>
@@ -56,3 +56,17 @@
                 <a href="javascript:void(0)" class="nav_btn"><i class="fa fa-bars"></i></a>
             </nav>
         </section>
+        <section class="hero" style="background-image: url('<?php if (has_post_thumbnail()) {
+                                                                the_post_thumbnail_url();
+                                                            } else {
+                                                                echo get_post_meta($post->ID, 'custom_feature_img', true);
+                                                            }  ?>');">
+            <h2>Frank GP — Web Architec</h2>
+            <p>Documentacion para programacion web</p>
+            <form action="<?php echo esc_url(home_url()); ?>" method="get">
+                <input type="text" placeholder="Que quieres Buscar" name="s">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <hr>
+        </section>
+    </header>

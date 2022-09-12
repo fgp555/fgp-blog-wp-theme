@@ -1,14 +1,5 @@
 <!-- ========== index.php ========== -->
 <?php get_header(); ?>
-<section class="hero">
-  <h1>Frank GP — Web Architec</h1>
-  <p>Documentacion frontend</p>
-  <form action="<?php echo esc_url(home_url()); ?>" method="get">
-    <input type="text" placeholder="Que quieres Buscar" name="s">
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
-</section>
-</header>
 <main>
   <section>
     <div class="blog-section blog-container">

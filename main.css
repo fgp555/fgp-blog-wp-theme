@@ -62,3 +62,12 @@ main .blog-container a {
 main .blog-container a:hover {
   color: burlywood;
 }
+/* ========== .single-section... ========== */
+main .single-section {
+  text-align: left;
+  padding: 1em;
+}
+main .single-section .blog-data {
+  color: #aaa;
+}
+/* ========== .single-section. ========== */

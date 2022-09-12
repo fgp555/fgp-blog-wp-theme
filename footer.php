@@ -32,7 +32,7 @@
   </section>
 
   <section class="credit">
-    <a href="https://github.com/fgp555/fgp-wp-blog-theme" style="text-decoration: none;" target="_blank">
+    <a href="https://github.com/fgp555/fgp-blog-wp-theme" style="text-decoration: none;" target="_blank">
       <p>FGP Blog WP Theme — version 2022.9.12</p>
     </a>
   </section>
