@@ -1,0 +1,37 @@
+/*
+  Theme Name: fgp-blog-wp-theme 
+  Version: 22.09
+*/
+
+* {
+  /* border: 1px dashed #080; */
+  box-sizing: border-box;
+}
+body {
+  font: 300 1em verdana;
+  text-align: center;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+a:hover {
+  color: brown;
+}
+pre {
+  overflow-x: auto;
+  background-color: #000;
+  color: white;
+  /* width: 20em; */
+  display: inline-block;
+
+}
+pre code {
+  overflow-wrap: normal;
+  white-space: pre;
+  padding: 1em;
+  /* width: 20em; */
+
+}

@@ -1,0 +1,45 @@
+:root {
+  ---color-1: darkslateblue;
+  ---color-2: #222;
+  ---color-3: indigo;
+  ---color-white: #fff;
+  ---color-black: #333;
+  --l-gradient1: linear-gradient(
+    45deg,
+    hsl(240deg 100% 20%) 0%,
+    hsl(289deg 100% 21%) 11%,
+    hsl(315deg 100% 27%) 22%,
+    hsl(329deg 100% 36%) 33%,
+    hsl(337deg 100% 43%) 44%,
+    hsl(357deg 91% 59%) 56%,
+    hsl(17deg 100% 59%) 67%,
+    hsl(34deg 100% 53%) 78%,
+    hsl(45deg 100% 50%) 89%,
+    hsl(55deg 100% 50%) 100%
+  );
+}
+
+body {
+  background-color: #eee;
+  color: #333;
+}
+header,
+footer {
+  /* background-color: #333; */
+  background-color: var(---color-black);
+  color: var(---color-white);
+}
+main {
+  background-color: white;
+}
+aside {
+  /* background-color: indigo; */
+  background-color: var(---color-1);
+  color: white;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  color: burlywood;
+}

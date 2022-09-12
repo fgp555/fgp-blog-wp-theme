@@ -1,0 +1,13 @@
+<?php 
+add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'responsive-embeds' );
+add_action( 'init', 'crear_un_cpt' );
+function crear_un_cpt() {
+     $args = array(
+     'public' => true,
+     'label' => 'Libros'
+);
+register_post_type( 'libro', $args );
+}
+
+ ?>

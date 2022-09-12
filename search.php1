@@ -1,0 +1,54 @@
+<!-- ========== search.php ========== -->
+
+<form action="<?php echo esc_url(home_url()); ?>" method="get">
+    <input type="text" placeholder="Que quieres Buscar" name="s">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+<main>
+      <section class="blog-section">
+        <h2>Blog</h2>
+        <div class="blog-container">
+          <!-- <article class="blog-card">
+            <img src="bg.webp" alt="" />
+            <div class="blog-content">
+              <h3>heading h3</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus possimus sed at porro ipsam illum exercitationem aut iste ab.</p>
+              <a href="#" class="btn">Leer mas...</a>
+            </div>
+          </article> -->
+          <?php 
+          while(have_posts()) {
+            the_post();
+            ?>
+            <article class="blog-card">
+               <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+               <div class="blog-content">
+                 <h3><?php the_title(); ?></h3>
+                 <?php the_excerpt(); ?>
+                 <a href="<?php the_permalink(); ?>" class="btn">Leer mas...</a>
+               </div>
+            </article>
+          <?php } ;
+          if (!have_posts()){
+              echo 'no hay post';
+          };
+          the_posts_pagination(array(
+            "next_text" => "sig.",
+            "prev_text" => "prev."
+          ));
+          ?>
+
+          <?php 
+          // while(have_posts()) {
+          //   the_post();
+          //   echo get_the_post_thumbnail_url();
+          //   the_title();
+          //   the_excerpt();
+          //   the_permalink();
+          // }
+           ?>
+
+
+        </div>
+      </section>
+    </main>

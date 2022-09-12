@@ -1,0 +1,64 @@
+/* ========== @media mobile... ========== */
+@media (max-width: 40rem) {
+  main .blog-section .blog-card {
+    flex-grow: 1;
+  }
+}
+/* ========== @media mobile. ========== */
+main .blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  /* justify-content: space-around; */
+}
+main .blog-section .blog-card {
+  /* max-width: 30rem; */
+  /* flex: 0 1 30rem; */
+  flex-grow: auto;
+  flex-shrink: 1;
+  flex-basis: 23rem;
+  border: 1px solid #ccc;
+  margin: 1em;
+  /* max-width: 23rem; */
+}
+main .blog-section img {
+  /* display: inline-block; */
+  /* text-align: center; */
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+main .blog-section .blog-content {
+  padding: 1em 0;
+  margin: 0;
+  /* background-color: #aaa; */
+  /* clear: both; */
+
+}
+main .blog-section h3 {
+  margin: 0;
+}
+main .blog-container p {
+  font-size: 0.9em;
+}
+
+main .blog-container .blog-data {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1em;
+  background-color: var(---color-1);
+  color: white;
+}
+main .blog-container .blog-card {
+  transition: transform 0.2s; /* Animation */
+}
+main .blog-container .blog-card:hover {
+  transform: scale(1.05);
+  /* overflow: hidden; */
+}
+main .blog-container a {
+  text-decoration: none;
+}
+main .blog-container a:hover {
+  color: burlywood;
+}

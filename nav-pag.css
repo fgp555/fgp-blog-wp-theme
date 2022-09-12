@@ -1,0 +1,25 @@
+main nav {
+    margin: 1em;
+}
+main nav .nav-links {
+    font-size: 1.5em;
+    /* display: flex; */
+}
+main nav .nav-links > * {
+    /* color: peru; */
+    display: inline-block;
+    padding: 0.5em;
+    background-color: #888;
+    color: white;
+}
+main nav .nav-links span {
+    background-color: #333;
+    /* color: white; */
+}
+main nav .nav-links a {
+    text-decoration: none;
+}
+main nav .nav-links a:hover {
+    background-color: brown;
+    color: white;
+}

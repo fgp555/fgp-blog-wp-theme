@@ -1,0 +1,12 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    padding: 1em;
+    border: 1px solid ;
+    /* border-radius: 0.3em; */
+}
+.btn:hover {
+    background-color: blueviolet;
+}
